@@ -7,16 +7,25 @@ export default function CityArea(props) {
     async function getCityData(cityname)
     {
         let APIkey=process.env.REACT_APP_APIKEY
-        let url=`https://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=${APIkey}`
+        let url=`https://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=${APIkey}&units=imperial`
         let res=await fetch(url)
         let data=await res.json()
-        props.showCityWeather(data)
+
+        let url1=`https://api.openweathermap.org/data/2.5/forecast?q=${cityname}&appid=${APIkey}`
+        let res1=await fetch(url1)
+        let data1=await res1.json()
+        props.showCityWeather(data,data1)
+
+
+        
+ 
+        
 
     }
 
   return (
     <div>
-      <ul>
+      <ul className="button-section">
         <li onClick={()=>getCityData("paris")}>
         <Button variant="outline-warning"> Paris</Button></li>
         <li onClick={()=>getCityData("ho chi minh")}>

@@ -2,7 +2,7 @@ body {
   height: 100%;
   background-color: black !important;
 }
-ul {
+.button-section {
   list-style: none;
   display: flex;
   padding: 0;
@@ -13,7 +13,7 @@ ul {
     margin: 0 auto;
     padding: 30px;
 }
-ul li {
+.button-section li {
   margin-right: 30px;
   cursor: pointer;
 }
@@ -66,4 +66,42 @@ ul li {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("https://c4.wallpaperflare.com/wallpaper/716/1002/554/new-york-images-for-backgrounds-desktop-wallpaper-preview.jpg");
+}
+
+
+.weatherByDay
+{
+    background-color: aliceblue;
+     border-radius: 20px;
+     padding-top: 30px;
+}
+.weatherByDay-section
+{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.time-of-day
+{
+    
+    background-color: cornflowerblue;
+    padding: 30px;
+    margin: 20px;
+    width: 20%;
+    border-radius: 20px;
+
+}
+.day
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.day-note
+{
+    color: black;
 }
