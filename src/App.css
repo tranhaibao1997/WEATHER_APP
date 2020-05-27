@@ -1,4 +1,66 @@
 body {
-    height: 100%;
-    background-color: black !important;
+  height: 100%;
+  background-color: black !important;
+}
+ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  background-color: black;
+    border-radius: 60px;
+}
+ul li {
+  margin-right: 30px;
+  cursor: pointer;
+}
+.loading {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bao-text {
+  background-color: rgba(52, 52, 52, 0.7);
+  padding: 50px;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+.bao-bg {
+  padding: 100px !important;
+}
+.Ho {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://lh3.googleusercontent.com/proxy/1NFg95JFkKLuDBJtLY1Zrtg6zmq3HXx-JPrTKRVB3SSWq1xRS1Vpn0s5NGcnp4NsSVIGSwq7IfY0w1aA7FgVBO3eiYwkDxmbxEEYzgNzU-UTp4RKT-TShMgqjc_mQL9e5stNsdygysN1s5lnlLK3_E-DPVBHxaFfaU3Ep6NI519KuFoX4cFHHMarfPTJ76l5PabdT7gfZ1icwhDZT6lzCn4W");
+}
+.Paris {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://www.telegraph.co.uk/content/dam/Travel/hotels/europe/france/paris/paris-cityscape-overview-guide.jpg");
+}
+.Hanoi {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://watitravel.com/wp-content/uploads/2017/06/hanoi-3.jpg");
+}
+.Sydney {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://images.idgesg.net/images/idge/imported/imageapi/2019/11/22/12/sydney_circular_quay_id_113945598__bjorn_hovdal__dreamstimecom-100818893-large.jpg");
+}
+.Tokyo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://i.pinimg.com/originals/76/a1/ef/76a1eff54a0aa4c0ff9a8f6470d511f5.jpg");
+}
+.New {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/716/1002/554/new-york-images-for-backgrounds-desktop-wallpaper-preview.jpg");
 }
