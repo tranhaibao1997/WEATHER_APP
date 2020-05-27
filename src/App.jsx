@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Loading from "./Loading";
 import CityArea from "./CityArea";
 import WeatherByDay from "./WeatherByDay";
+import Carousel from 'react-bootstrap/Carousel'
 
 class App extends Component {
   constructor(props) {
@@ -133,20 +134,21 @@ class App extends Component {
         <CityArea showCityWeather={this.getCityData}></CityArea>
         <div class="weatherByDay-section">
         {
-          this.state.data5days!==null ?this.splitUp(this.state.data5days.list,5).map(elm =>
-            {
-              return(
-                
-                <ul class="weatherByDay">
-                   <WeatherByDay elm={elm} city={this.state.city} ></WeatherByDay> 
-                </ul>   
-                 
-               
-               
-              )
-            
-          }) :<h1></h1>
+          this.state.data5days!==null ?
+          <Carousel>
+          {this.splitUp(this.state.data5days.list,5).map(elm =>{ return(
+                <Carousel.Item>
+               <ul class="weatherByDay">
+                             <WeatherByDay elm={elm} city={this.state.city} ></WeatherByDay> 
+                          </ul>   
+            </Carousel.Item> )})}
+          </Carousel> 
+          
+          
+          :<h1></h1>
         }
+  
+
          </div>
       </div>
     );
